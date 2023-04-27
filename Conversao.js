@@ -2,9 +2,8 @@ function convBin() {
     let numBin = document.getElementById("Num")
     let Res = document.getElementById("res")
     let bin = numBin.value
-    if(bin != 0 || bin != 1){
-        window.alert("Somente números binários zé ruela!")
-    }
+ 
+   
     if(bin.length <= 16){
         for(i = 0;i < bin.length; i++){
             var binUm = bin[bin.length -1]
@@ -93,7 +92,11 @@ function convBin() {
          }
     }
     var rr = resultado
+    if(resultado === 0){
+        Res.innerHTML = `Apenas número binários`
+    } else {
     return Res.innerHTML = `${rr}`
+    }
 }
 
 
