@@ -2,6 +2,9 @@ function convBin() {
     let numBin = document.getElementById("Num")
     let Res = document.getElementById("res")
     let bin = numBin.value
+    if(bin != 0 || bin != 1){
+        window.alert("Somente números binários zé ruela!")
+    }
     if(bin.length <= 16){
         for(i = 0;i < bin.length; i++){
             var binUm = bin[bin.length -1]
@@ -85,6 +88,7 @@ function convBin() {
             if(binDezesseis === "0" || binDezesseis === "1"){
                 posDezesseis = binCinco * 2**15
             }
+            
             resultado = posDezesseis + posQuinze + posQuatorze + posTreze + posDoze + posOnze + posDez + posNove + posOito + posSete + posSeis + posCinco + posQuatro + posTres + posDois + posIn
          }
     }
