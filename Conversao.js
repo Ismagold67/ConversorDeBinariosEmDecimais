@@ -93,7 +93,7 @@ function convBin() {
     }
     var rr = resultado
     if(resultado === 0){
-        Res.innerHTML = `Apenas número binários`
+        Res.innerHTML = `Apenas números binários gênio`
     } else {
     return Res.innerHTML = `${rr}`
     }
